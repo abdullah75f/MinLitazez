@@ -1,6 +1,4 @@
-import { IconType } from "react-icons";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import { NavLink } from "react-router-dom";
 import UseTheme, { darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
 import logo from "../assets/icons/logo.jpg";
 
@@ -9,22 +7,22 @@ import logo from "../assets/icons/logo.jpg";
 
 
 
-type NavComponentType = {
-    to: string;
-    icon: IconType;
-    text: string;
-}
+// type NavComponentType = {
+//     to: string;
+//     icon: IconType;
+//     text: string;
+// }
 
-const NavComponent: React.FC<NavComponentType> = (prop) => {
-    return (
-        <li className="px-1 rounded-md hover:bg-main-8">
-            <NavLink to={prop.to}>
-                <prop.icon className="inline" />
-                <span className="hidden pl-1 md:inline">{prop.text}</span>
-            </NavLink>
-        </li>
-    )
-}
+// const NavComponent: React.FC<NavComponentType> = (prop) => {
+//     return (
+//         <li className="px-1 rounded-md hover:bg-main-8">
+//             <NavLink to={prop.to}>
+//                 <prop.icon className="inline" />
+//                 <span className="hidden pl-1 md:inline">{prop.text}</span>
+//             </NavLink>
+//         </li>
+//     )
+// }
 
 const Navbar = () => {
     const theme = UseTheme() as ThemeContextType;

@@ -5,4 +5,3 @@ import Plumbing from "./plumbing.jpg";
 import Repair from "./repair.jpg";
 import Stationery from "./stationery.jpg";
 export default { Car, Cleaning, Delivery, Plumbing, Repair, Stationery };
-let c = "j"
