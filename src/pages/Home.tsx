@@ -8,6 +8,7 @@ const Home = () => {
 
     return (
         <div>
+            <h2 className="text-center text-3xl font-bold">Coming Soon</h2>
             <h2 className="text-center text-3xl font-bold">Services We give</h2>
             <ul className="my-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 items-center justify-center">
                 {ServicesList.map((service, index) => (
