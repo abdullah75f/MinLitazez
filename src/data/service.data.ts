@@ -1,5 +1,5 @@
-import ServiceModel from "../types/service.model";
 import assets from "../assets";
+import ServiceModel from "../types/service.model";
 
 
 const ServicesList: ServiceModel[] = [
@@ -10,53 +10,53 @@ const ServicesList: ServiceModel[] = [
         Route: "/stationery"
     },
     {
-        Title: "Professional Painting Service",
-        Picture: assets.Images.Stationery,
+        Title: "Painting",
+        Picture: assets.Images.Painting,
         IsStarted: false
     },
     {
-        Title: "Plumbing Services",
-        Picture: assets.Images.Repair,
+        Title: "Plumbing",
+        Picture: assets.Images.Plumbing,
         IsStarted: false
     },
     {
-        Title: "Delivery Services",
+        Title: "Delivery",
         Picture: assets.Images.Delivery,
         IsStarted: false
     },
     {
-        Title: "Auto Car Service",
+        Title: "Auto Car",
         Picture: assets.Images.Car,
         IsStarted: false
     },
     {
-        Title: "MinLitazez Products: Electronics",
-        Picture: assets.Images.Stationery,
+        Title: "Electronics",
+        Picture: assets.Images.Electronics,
         IsStarted: false
     },
     {
-        Title: "MinLitazez Products: Clothing",
-        Picture: assets.Images.Stationery,
+        Title: "Clothing",
+        Picture: assets.Images.Clothing,
         IsStarted: false
     },
     {
-        Title: "Cleaning Service",
+        Title: "Cleaning",
         Picture: assets.Images.Cleaning,
         IsStarted: false
     },
     {
-        Title: "Handyman Service",
-        Picture: assets.Images.Stationery,
+        Title: "Handyman",
+        Picture: assets.Images.Repair,
         IsStarted: false
     },
     {
-        Title: "Cylinder Service",
-        Picture: assets.Images.Stationery,
+        Title: "Cylinder",
+        Picture: assets.Images.Cylinder,
         IsStarted: false
     },
     {
-        Title: "Grocery Service",
-        Picture: assets.Images.Stationery,
+        Title: "Grocery",
+        Picture: assets.Images.Grocery,
         IsStarted: false
     },
 

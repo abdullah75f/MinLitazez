@@ -1,7 +1,12 @@
 import Car from "./car.jpg";
 import Cleaning from "./cleaning.jpg";
+import Clothing from "./clothing.jpg";
+import Cylinder from "./cylinder.jpg";
 import Delivery from "./delivery.jpg";
+import Electronics from "./electronics.jpg";
+import Grocery from "./grocery.jpg";
+import Painting from "./painting.jpg";
 import Plumbing from "./plumbing.jpg";
 import Repair from "./repair.jpg";
 import Stationery from "./stationery.jpg";
-export default { Car, Cleaning, Delivery, Plumbing, Repair, Stationery };
+export default { Car, Cleaning, Delivery, Plumbing, Repair, Stationery, Clothing, Cylinder, Electronics, Painting, Grocery };

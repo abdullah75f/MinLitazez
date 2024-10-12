@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import UseTheme, { darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
+import UseTheme, { accentColors, darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
 import logo from "../assets/icons/logo.jpg";
 
 
@@ -26,6 +27,7 @@ import logo from "../assets/icons/logo.jpg";
 
 const Navbar = () => {
     const theme = UseTheme() as ThemeContextType;
+    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
     return (
         <header className="flex items-center justify-between">
 
@@ -33,7 +35,26 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className="rounded h-8" />
                 <h1 className="hidden text-3xl font-bold md:block">MinLitazez Trading</h1>
             </div>
-            <div className="">
+            <div className="flex">
+                {/* <div
+                    className={`mx-auto my-auto text-2xl border-2 border-transparent rounded-full bg-accent`}
+                    onClick={() => setIsDropdownVisible(!isDropdownVisible)}
+                    style={{ width: '50px', height: '50px', cursor: 'pointer' }}
+                >
+                </div>
+                {isDropdownVisible && (
+                    <div className="absolute mt-2 bg-white border border-gray-300 rounded shadow-lg">
+                        {accentColors.map((color) => (
+                            <div
+                                key={color}
+                                className={`p-2 cursor-pointer hover:bg-${color}`}
+                                onClick={() => theme.changeAccentColor(color)}
+                            >
+                                {color}
+                            </div>
+                        ))}
+                    </div>
+                )} */}
                 <div className="mx-auto my-auto text-2xl border-2 border-transparent rounded-full hover:bg-main-8">
                     {
                         theme.currentThemeColor === darkTheme
