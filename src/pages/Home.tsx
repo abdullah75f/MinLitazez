@@ -60,55 +60,54 @@ const Home = () => {
                     ))}
                 </ul>
             </div>
-      {/* Social Media Links Section */}
-<div className="flex justify-center mt-10 space-x-6">
-    <a href="https://www.instagram.com/minlitazezaddis2020/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
-        e.preventDefault();
-        window.location.href = "instagram://user?username=minlitazezaddis2020";
-        setTimeout(() => {
-            window.location.href = "https://www.instagram.com/minlitazezaddis2020/";
-        }, 500);
-    }}>
-        <FaInstagram className="text-4xl text-gray-700 hover:text-red-600" />
-    </a>
-    <a href="https://t.me/MinLetazezAddis" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
-        e.preventDefault();
-        window.location.href = "tg://resolve?domain=MinLetazezAddis";
-        setTimeout(() => {
-            window.location.href = "https://t.me/MinLetazezAddis";
-        }, 500);
-    }}>
-        <FaTelegram className="text-4xl text-gray-700 hover:text-blue-500" />
-    </a>
-    <a href="https://www.tiktok.com/@minletazez?lang=en" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
-        e.preventDefault();
-        window.location.href = "snssdk1128://user/profile/686441123456789";
-        setTimeout(() => {
-            window.location.href = "https://www.tiktok.com/@minletazez?lang=en";
-        }, 500);
-    }}>
-        <FaTiktok className="text-4xl text-gray-700 hover:text-black" />
-    </a>
-    <a href="https://web.facebook.com/MinLetazez2020" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
-        e.preventDefault();
-        window.location.href = "fb://page/MinLetazez2020";
-        setTimeout(() => {
-            window.location.href = "https://web.facebook.com/MinLetazez2020";
-        }, 500);
-    }}>
-        <FaFacebook className="text-4xl text-gray-700 hover:text-blue-700" />
-    </a>
-    <a href="https://www.youtube.com/@MinLitazezTrading" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
-        e.preventDefault();
-        window.location.href = "vnd.youtube://www.youtube.com/channel/UC1234567890";
-        setTimeout(() => {
-            window.location.href = "https://www.youtube.com/@MinLitazezTrading";
-        }, 500);
-    }}>
-        <FaYoutube className="text-4xl text-gray-700 hover:text-red-700" />
-    </a>
+
+        <div className="flex justify-center mt-10 space-x-6">
+            <a href="https://www.instagram.com/minlitazezaddis2020/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
+                 e.preventDefault();
+                window.location.href = "instagram://user?username=minlitazezaddis2020";
+                setTimeout(() => {
+                    window.location.href = "https://www.instagram.com/minlitazezaddis2020/";
+                    }, 30000);
+            }}>
+                <FaInstagram className="text-4xl text-gray-700 hover:text-red-600" />
+            </a>
+            <a href="https://t.me/MinLetazezAddis" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
+                 e.preventDefault();
+                window.location.href = "tg://resolve?domain=MinLetazezAddis";
+             setTimeout(() => {
+                window.location.href = "https://t.me/MinLetazezAddis";
+                    }, 30000);
+            }}>
+                <FaTelegram className="text-4xl text-gray-700 hover:text-blue-500" />
+            </a>
+            <a href="https://www.tiktok.com/@minletazez?lang=en" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "snssdk1128://user/profile/686441123456789";
+                setTimeout(() => {
+                    window.location.href = "https://www.tiktok.com/@minletazez?lang=en";
+                    }, 30000);
+                }}>
+                <FaTiktok className="text-4xl text-gray-700 hover:text-black" />
+            </a>
+            <a href="https://web.facebook.com/MinLetazez2020" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "fb://page/MinLetazez2020";
+                setTimeout(() => {
+                     window.location.href = "https://web.facebook.com/MinLetazez2020";
+                    }, 30000);
+                }}>
+                <FaFacebook className="text-4xl text-gray-700 hover:text-blue-700" />
+            </a>
+            <a href="https://www.youtube.com/@MinLitazezTrading" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110" onClick={(e) => {
+                e.preventDefault();
+                window.location.href = "vnd.youtube://www.youtube.com/channel/UC1234567890";
+                setTimeout(() => {
+                    window.location.href = "https://www.youtube.com/@MinLitazezTrading";
+                    }, 30000);
+                }}>
+                 <FaYoutube className="text-4xl text-gray-700 hover:text-red-700" />
+            </a>
 </div>
-{/* End of Social Media Links Section */}
         </div >
     );
 }
