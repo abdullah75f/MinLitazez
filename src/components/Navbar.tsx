@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import UseTheme, { accentColors, darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
+import UseTheme, { darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
 import logo from "../assets/icons/logo.jpg";
 
 
@@ -27,12 +26,12 @@ import logo from "../assets/icons/logo.jpg";
 
 const Navbar = () => {
     const theme = UseTheme() as ThemeContextType;
-    const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+    // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
     return (
         <header className="flex items-center justify-between">
 
-            <div className="flex h-8 gap-2 items-center">
-                <img src={logo} alt="Logo" className="rounded h-8" />
+            <div className="flex items-center h-8 gap-2">
+                <img src={logo} alt="Logo" className="h-8 rounded" />
                 <h1 className="hidden text-3xl font-bold md:block">MinLitazez Trading</h1>
             </div>
             <div className="flex">
