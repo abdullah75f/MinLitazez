@@ -1,7 +1,9 @@
 import { useNavigate } from 'react-router-dom';
+import { FaInstagram,FaTelegram,FaTiktok,FaFacebook, FaYoutube } from 'react-icons/fa';
 import videoes from '../assets/videoes';
 import PartnerList from '../data/partner.data';
 import ServicesList from "../data/service.data";
+
 
 const Home = () => {
     return (
@@ -58,6 +60,25 @@ const Home = () => {
                     ))}
                 </ul>
             </div>
+           {/* Social Media Links Section */}
+<div className="flex justify-center mt-10 space-x-6">
+    <a href="https://www.instagram.com/minlitazezaddis2020/" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+        <FaInstagram className="text-4xl text-gray-700 hover:text-red-600" />
+    </a>
+    <a href="https://web.telegram.org/a/#-1001384903055" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+        <FaTelegram className="text-4xl text-gray-700 hover:text-blue-500" />
+    </a>
+    <a href="https://www.tiktok.com/@minletazez?lang=en" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+        <FaTiktok className="text-4xl text-gray-700 hover:text-black" />
+    </a>
+    <a href="https://web.facebook.com/MinLetazez2020" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+        <FaFacebook className="text-4xl text-gray-700 hover:text-blue-700" />
+    </a>
+    <a href="https://www.youtube.com/@MinLitazezTrading" target="_blank" rel="noopener noreferrer" className="transition-transform transform hover:scale-110">
+        <FaYoutube className="text-4xl text-gray-700 hover:text-red-700" />
+    </a>
+</div>
+{/* End of Social Media Links Section */}
 
 
         </div >
