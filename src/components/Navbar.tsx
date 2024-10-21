@@ -11,12 +11,12 @@ const Navbar = () => {
   const theme = UseTheme() as ThemeContextType;
 
   return (
-    <header className="flex items-center justify-between px-8 py-4">
+    <header className="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
       {/* Logo and Title */}
-      <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4 mb-4 md:mb-0">
         <img src={logo} alt="Logo" className="h-12 rounded-full shadow-md" />
         <h1
-          className="text-3xl font-extrabold text-gray-900"
+          className="text-2xl md:text-3xl font-extrabold text-gray-900"
           style={{ fontFamily: "Lobster, cursive" }}
         >
           MinLitazez Trading
@@ -24,20 +24,20 @@ const Navbar = () => {
       </div>
 
       {/* Contact Us Section */}
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
         {/* Contact Us at */}
         <div className="text-lg font-semibold text-gray-900">
           <span style={{ fontFamily: "Lobster, cursive" }}>Contact Us at</span>
         </div>
 
         {/* Phone Numbers */}
-        <div className="flex items-center space-x-6">
+        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
           {/* Phone Number 1 */}
           <div className="flex items-center space-x-2">
             <FaPhone className="text-xl text-gray-700" />
             <a
               href="tel:+251937389909"
-              className="text-lg font-semibold text-gray-700 hover:text-green-500"
+              className="text-base md:text-lg font-semibold text-gray-700 hover:text-green-500"
               style={{ fontFamily: "Lobster, cursive" }}
             >
               +251 937 389 909
@@ -48,7 +48,7 @@ const Navbar = () => {
             <FaPhone className="text-xl text-gray-700" />
             <a
               href="tel:+251717443050"
-              className="text-lg font-semibold text-gray-700 hover:text-green-500"
+              className="text-base md:text-lg font-semibold text-gray-700 hover:text-green-500"
               style={{ fontFamily: "Lobster, cursive" }}
             >
               +251 717 443 050
