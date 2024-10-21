@@ -1,87 +1,72 @@
 import { MdDarkMode, MdLightMode } from "react-icons/md";
-import UseTheme, { darkTheme, lightTheme, ThemeContextType } from "../ThemeProvider";
+import UseTheme, {
+  darkTheme,
+  lightTheme,
+  ThemeContextType,
+} from "../ThemeProvider";
 import logo from "../assets/icons/logo.jpg";
-
-
-
-
-
-
-// type NavComponentType = {
-//     to: string;
-//     icon: IconType;
-//     text: string;
-// }
-
-// const NavComponent: React.FC<NavComponentType> = (prop) => {
-//     return (
-//         <li className="px-1 rounded-md hover:bg-main-8">
-//             <NavLink to={prop.to}>
-//                 <prop.icon className="inline" />
-//                 <span className="hidden pl-1 md:inline">{prop.text}</span>
-//             </NavLink>
-//         </li>
-//     )
-// }
+import { FaPhone } from "react-icons/fa";
 
 const Navbar = () => {
-    const theme = UseTheme() as ThemeContextType;
-    // const [isDropdownVisible, setIsDropdownVisible] = useState(false);
-    return (
-        <header className="flex items-center justify-between">
+  const theme = UseTheme() as ThemeContextType;
 
-            <div className="flex items-center h-8 gap-2">
-                <img src={logo} alt="Logo" className="h-10 rounded" />
-                <h1 className="hidden text-4xl font-bold md:block">MinLitazez Trading</h1>
-            </div>
-            <div className="flex">
-                {/* <div
-                    className={`mx-auto my-auto text-2xl border-2 border-transparent rounded-full bg-accent`}
-                    onClick={() => setIsDropdownVisible(!isDropdownVisible)}
-                    style={{ width: '50px', height: '50px', cursor: 'pointer' }}
-                >
-                </div>
-                {isDropdownVisible && (
-                    <div className="absolute mt-2 bg-white border border-gray-300 rounded shadow-lg">
-                        {accentColors.map((color) => (
-                            <div
-                                key={color}
-                                className={`p-2 cursor-pointer hover:bg-${color}`}
-                                onClick={() => theme.changeAccentColor(color)}
-                            >
-                                {color}
-                            </div>
-                        ))}
-                    </div>
-                )} */}
-                <div className="mx-auto my-auto text-2xl border-2 border-transparent rounded-full hover:bg-main-8">
-                    {
-                        theme.currentThemeColor === darkTheme
-                            ? <MdDarkMode onClick={() => theme.changeThemeColor(lightTheme)} />
-                            : <MdLightMode onClick={() => theme.changeThemeColor(darkTheme)} />
-                    }
-                </div>
-            </div>
+  return (
+    <header className="flex items-center justify-between px-8 py-4">
+      {/* Logo and Title */}
+      <div className="flex items-center gap-4">
+        <img src={logo} alt="Logo" className="h-12 rounded-full shadow-md" />
+        <h1
+          className="text-3xl font-extrabold text-gray-900"
+          style={{ fontFamily: "Lobster, cursive" }}
+        >
+          MinLitazez Trading
+        </h1>
+      </div>
 
-        </header>
-    )
-}
+      {/* Contact Us Section */}
+      <div className="flex items-center gap-8">
+        {/* Contact Us at */}
+        <div className="text-lg font-semibold text-gray-900">
+          <span style={{ fontFamily: "Lobster, cursive" }}>Contact Us at</span>
+        </div>
 
-export default Navbar
+        {/* Phone Numbers */}
+        <div className="flex items-center space-x-6">
+          {/* Phone Number 1 */}
+          <div className="flex items-center space-x-2">
+            <FaPhone className="text-xl text-gray-700" />
+            <a
+              href="tel:+251937389909"
+              className="text-lg font-semibold text-gray-700 hover:text-green-500"
+              style={{ fontFamily: "Lobster, cursive" }}
+            >
+              +251 937 389 909
+            </a>
+          </div>
+          {/* Phone Number 2 */}
+          <div className="flex items-center space-x-2">
+            <FaPhone className="text-xl text-gray-700" />
+            <a
+              href="tel:+251717443050"
+              className="text-lg font-semibold text-gray-700 hover:text-green-500"
+              style={{ fontFamily: "Lobster, cursive" }}
+            >
+              +251 717 443 050
+            </a>
+          </div>
+        </div>
 
+        {/* Theme Toggle */}
+        <div className="mx-auto my-auto text-2xl border-2 border-transparent rounded-full hover:bg-main-8">
+          {theme.currentThemeColor === darkTheme ? (
+            <MdDarkMode onClick={() => theme.changeThemeColor(lightTheme)} />
+          ) : (
+            <MdLightMode onClick={() => theme.changeThemeColor(darkTheme)} />
+          )}
+        </div>
+      </div>
+    </header>
+  );
+};
 
-//TODO: Accent Color
-{/* <select id="theme-selector"
-                    className="text-3xl"
-                    value={theme.currentAccentColor}
-                    onChange={(e) => { theme.changeAccentColor(e.target.value) }}>
-                    {
-                        accentColors.map((color) => {
-                            return (
-                                <option value={color} className={`${color} bg-accent`}>
-                                    <FaCircle className="p-1 rounded-full" />
-                                </option>
-                            )
-                        })
-                    }
-                </select> */}
+export default Navbar;
