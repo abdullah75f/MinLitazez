@@ -11,7 +11,7 @@ const PartnerList: PartnerModel[] = [
     Picture: assets.Images.Jevis,
   },
   {
-    Name: "Zion mekina masetltnga",
+    Name: "Zion Car training",
   },
   {
     Name: "Chocodip delight",
