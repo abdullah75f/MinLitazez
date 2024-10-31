@@ -10,7 +10,7 @@ const ServicesList: ServiceModel[] = [
   },
   {
     Title: "MinLitazez Candle",
-    Picture: assets.Images.Candle,
+    Picture: assets.Images.CandleBrown,
     IsStarted: true,
     Route: "/Candle",
   },

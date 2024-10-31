@@ -9,7 +9,8 @@ import Finjani from "./finjani.jpg";
 import Grocery from "./grocery.jpg";
 import Jevis from "./jevis.jpg";
 import Painting from "./painting.jpg";
-import Candle from "./candle.jpeg";
+import CandleBlue from "./candleBlue.jpeg";
+import CandleBrown from "./CandleBrown.jpeg";
 import Plumbing from "./plumbing.jpg";
 import Repair from "./repair.jpg";
 import Roomi from "./roomi.png";
@@ -35,5 +36,6 @@ export default {
   Roomi,
   Smart,
   Total,
-  Candle,
+  CandleBlue,
+  CandleBrown,
 };
