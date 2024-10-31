@@ -6,6 +6,7 @@ import UseTheme, {
 } from "../ThemeProvider";
 import logo from "../assets/icons/logo.jpg";
 import { FaPhone } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const theme = UseTheme() as ThemeContextType;
@@ -14,13 +15,19 @@ const Navbar = () => {
     <header className="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
       {/* Logo and Title */}
       <div className="flex items-center gap-4 mb-4 md:mb-0">
-        <img src={logo} alt="Logo" className="h-12 rounded-full shadow-md" />
-        <h1
-          className="text-2xl md:text-3xl font-extrabold text-gray-900"
-          style={{ fontFamily: "Lobster, cursive" }}
-        >
-          MinLitazez Trading
-        </h1>
+        <Link to="/" className="flex items-center space-x-4">
+          <img
+            src={logo}
+            alt="Logo"
+            className="h-12 rounded-full shadow-md cursor-pointer"
+          />
+          <h1
+            className="text-2xl md:text-3xl font-extrabold text-gray-900"
+            style={{ fontFamily: "Lobster, cursive" }}
+          >
+            MinLitazez Trading
+          </h1>
+        </Link>
       </div>
 
       {/* Contact Us Section */}
