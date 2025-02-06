@@ -4,9 +4,9 @@ const Mask = () => {
   return (
     <div className="relative py-16 min-h-screen flex items-center justify-center bg-fixed bg-gray-900">
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="absolute inset-0 bg-blue-300 opacity-60"></div>
 
-      {/* Content container */}
+     
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
         <h1 className="mb-6 text-6xl font-extrabold tracking-wide text-blue-300">
           Guyya FaceMask
