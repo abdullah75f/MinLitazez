@@ -17,6 +17,7 @@ import Roomi from "./roomi.png";
 import Smart from "./smart.png";
 import Stationery from "./stationery.jpg";
 import Total from "./total.jpeg";
+import Mask from "./GuyyaMask.jpg";
 
 export default {
   Car,
@@ -38,4 +39,5 @@ export default {
   Total,
   CandleBlue,
   CandleBrown,
+  Mask,
 };
