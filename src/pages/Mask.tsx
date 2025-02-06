@@ -4,7 +4,7 @@ const Mask = () => {
   return (
     <div className="relative py-16 min-h-screen flex items-center justify-center bg-fixed bg-gray-900">
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-blue-300 opacity-40"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-blue-200 via-blue-300 to-blue-400 opacity-50"></div>
 
       {/* Content container */}
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
