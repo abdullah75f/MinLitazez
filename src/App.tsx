@@ -12,6 +12,7 @@ import RootLayout from "./layouts/RootLayout";
 import Home from "./pages/Home";
 import Stationery from "./pages/Sationery";
 import Candle from "./pages/Candle";
+import Mask from "./pages/Mask";
 
 const Router = createBrowserRouter(
   createRoutesFromElements(
@@ -20,6 +21,7 @@ const Router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="stationery" element={<Stationery />} />
         <Route path="Candle" element={<Candle />} />
+        <Route path="Mask" element={<Mask />} />
 
         <Route path="*" element={<Navigate to="/" />} />
       </Route>
