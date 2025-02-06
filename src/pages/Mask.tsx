@@ -4,7 +4,7 @@ const Mask = () => {
   return (
     <div className="relative py-16 min-h-screen flex items-center justify-center bg-fixed bg-gray-900">
       {/* Semi-transparent overlay */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="absolute inset-0 bg-blue-300 opacity-40"></div>
 
       {/* Content container */}
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
@@ -21,7 +21,10 @@ const Mask = () => {
           <p className="text-4xl font-semibold text-blue-900 mb-3">
             Order Your Guyya Facemask Now!
           </p>
-          <p>የእርስዎን Guyya Facemask አሁን ይዘዙ!</p>
+          <p className="text-4xl font-semibold text-blue-900 mb-3">
+            የእርስዎን Guyya Facemask አሁን ይዘዙ!
+          </p>
+
           <p className="text-2xl text-blue-800 mb-6">
             Get yours today and stay protected.
           </p>
