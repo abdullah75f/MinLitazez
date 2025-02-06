@@ -17,7 +17,7 @@ const ServicesList: ServiceModel[] = [
   {
     Title: "Mask",
     Picture: assets.Images.Mask,
-    IsStarted: false,
+    IsStarted: true,
     Route: "/Mask",
   },
   {
