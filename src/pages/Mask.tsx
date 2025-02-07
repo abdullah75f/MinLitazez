@@ -9,7 +9,7 @@ const Mask = () => {
       {/* Content container */}
       <div className="relative z-10 max-w-3xl mx-auto px-6 text-center text-white">
         <h1 className="mb-6 text-6xl font-extrabold tracking-wide text-blue-300">
-          Guyya FaceMask
+          Guyya Medical Face Mask
         </h1>
 
         <div className="p-8 bg-blue-100 bg-opacity-95 rounded-2xl shadow-2xl">
