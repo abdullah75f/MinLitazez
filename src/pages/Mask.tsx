@@ -29,28 +29,42 @@ const Mask = () => {
             Get yours today and stay protected.
           </p>
 
-          {/* Clickable phone numbers */}
-          <p className="text-2xl font-bold text-blue-700">
-            Call:{" "}
-            <a href="tel:+251937389909" className="underline">
-              +251 937 389 909
-            </a>
-            ,{" "}
-            <a href="tel:+251944880841" className="underline">
-              094 488 0841
-            </a>
-            ,{" "}
-            <a href="tel:+251944880840" className="underline">
-              094 488 0840
-            </a>
-          </p>
+          {/* Clickable phone numbers with improved styling */}
+          <div className="mb-4">
+            <p className="text-2xl font-bold text-blue-700 mb-2">Call:</p>
+            <div className="flex flex-col space-y-2">
+              <a
+                href="tel:+251937389909"
+                className="text-xl bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+              >
+                +251 937 389 909
+              </a>
+              <a
+                href="tel:+251944880841"
+                className="text-xl bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+              >
+                094 488 0841
+              </a>
+              <a
+                href="tel:+251944880840"
+                className="text-xl bg-blue-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
+              >
+                094 488 0840
+              </a>
+            </div>
+          </div>
 
-          <p className="text-2xl font-bold text-blue-700">
-            Email:{" "}
-            <a href="mailto:minlitazezt@gmail.com" className="underline">
+          {/* Email with better styling */}
+          <div className="mb-4">
+            <p className="text-2xl font-bold text-blue-700 mb-2">Email:</p>
+            <a
+              href="mailto:minlitazezt@gmail.com"
+              className="text-xl bg-green-600 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
+            >
               minlitazezt@gmail.com
             </a>
-          </p>
+          </div>
+
           <p className="text-2xl font-bold text-blue-700">
             Post: P.O. Box 20895
           </p>
