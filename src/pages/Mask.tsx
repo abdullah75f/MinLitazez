@@ -33,7 +33,7 @@ const Mask = () => {
           {/* Clickable phone numbers with improved styling */}
           <div className="mb-3 sm:mb-4">
             <p className="text-lg sm:text-2xl font-semibold text-blue-700 mb-2">
-              Call on the below numbers
+              Reach us at the following numbers
             </p>
             <div className="flex flex-col space-y-2">
               <a
