@@ -22,7 +22,7 @@ const Mask = () => {
             Order Your Guyya Facemask Now!
           </p>
           <p className="text-xl sm:text-3xl font-semibold text-blue-900 mb-2 sm:mb-3">
-            የእርስዎን የጉያ ጭምብል አሁን ይዘዙ!
+            ጭምብልዎን ይዘዙ፣ ይሸምቱ፣ ደህነትዎን ይጠብቁ!
           </p>
 
           <p className="text-lg sm:text-2xl text-blue-800 mb-4 sm:mb-6">
@@ -31,7 +31,9 @@ const Mask = () => {
 
           {/* Clickable phone numbers with improved styling */}
           <div className="mb-3 sm:mb-4">
-            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">Call on the below numbers</p>
+            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">
+              Call on the below numbers
+            </p>
             <div className="flex flex-col space-y-2">
               <a
                 href="tel:+251937389909"
@@ -56,7 +58,9 @@ const Mask = () => {
 
           {/* Email with better styling */}
           <div className="mb-3 sm:mb-4">
-            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">Email:</p>
+            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">
+              Email:
+            </p>
             <a
               href="mailto:minlitazezt@gmail.com"
               className="text-base sm:text-xl bg-green-600 text-white px-3 py-2 rounded-lg shadow-md hover:bg-green-700 transition"
@@ -65,7 +69,9 @@ const Mask = () => {
             </a>
           </div>
 
-          <p className="text-lg sm:text-2xl font-bold text-blue-700">Post: P.O. Box 20895</p>
+          <p className="text-lg sm:text-2xl font-bold text-blue-700">
+            Post: P.O. Box 20895
+          </p>
         </div>
       </div>
     </div>
