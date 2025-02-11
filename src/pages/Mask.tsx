@@ -59,3 +59,5 @@ const Mask = () => {
     </div>
   );
 };
+
+export default Mask;
