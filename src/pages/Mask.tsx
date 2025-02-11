@@ -22,14 +22,20 @@ const Mask = () => {
             Order Your Guyya Facemask Now!
           </p>
           <p className="text-4xl font-semibold text-blue-900 mb-3">
-            የእርስዎን Guyya Facemask አሁን ይዘዙ!
+            የእርስዎን የጉያ ጭምብል አሁን ይዘዙ!
           </p>
 
           <p className="text-2xl text-blue-800 mb-6">
             Get yours today and stay protected.
           </p>
           <p className="text-3xl font-bold text-blue-700">
-            Call: +251 937 389 909 or +251 717 443 050
+            Call: +251 937 389 909
+          </p>
+          <p className="text-3xl font-bold text-blue-700">
+            Email: minlitazezt@gmail.com
+          </p>
+          <p className="text-3xl font-bold text-blue-700">
+            Post: P.O. Box 20895
           </p>
         </div>
       </div>
