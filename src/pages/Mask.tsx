@@ -22,7 +22,8 @@ const Mask = () => {
             Order Your Guyya Facemask Now!
           </p>
           <p className="text-xl sm:text-3xl font-semibold text-blue-900 mb-2 sm:mb-3">
-            ጭምብልዎን ይዘዙ፣ ይሸምቱ፣ ደህነትዎን ይጠብቁ!
+            ጭምብልዎን ይሸምቱ <br />
+            ደህነትዎን ይጠብቁ!
           </p>
 
           <p className="text-lg sm:text-2xl text-blue-800 mb-4 sm:mb-6">
