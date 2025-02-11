@@ -12,17 +12,17 @@ const Navbar = () => {
   const theme = UseTheme() as ThemeContextType;
 
   return (
-    <header className="flex flex-col md:flex-row items-center justify-between px-4 md:px-8 py-4">
+    <header className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-4 lg:py-6">
       {/* Logo and Title */}
-      <div className="flex items-center gap-4 mb-4 md:mb-0">
+      <div className="flex items-center gap-4 mb-4 lg:mb-0">
         <Link to="/" className="flex items-center space-x-4">
           <img
             src={logo}
             alt="Logo"
-            className="h-12 rounded-full shadow-md cursor-pointer"
+            className="h-14 lg:h-16 rounded-full shadow-md cursor-pointer"
           />
           <h1
-            className="text-2xl md:text-3xl font-extrabold text-gray-900"
+            className="text-2xl lg:text-4xl font-extrabold text-gray-900"
             style={{ fontFamily: "Lobster, cursive" }}
           >
             MinLitazez Trading
@@ -31,30 +31,39 @@ const Navbar = () => {
       </div>
 
       {/* Contact Us Section */}
-      <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-        {/* Contact Us at */}
-        <div className="text-lg font-semibold text-gray-900">
+      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-10">
+        {/* Contact Us Label */}
+        <div className="text-lg lg:text-2xl font-semibold text-gray-900">
           <span style={{ fontFamily: "Lobster, cursive" }}>Contact Us at</span>
         </div>
 
-        {/* Phone Numbers */}
-        <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
-          {/* Phone Number 1 */}
-          <div className="flex items-center space-x-2">
-            <FaPhone className="text-xl text-gray-700" />
+        {/* Phone Numbers (Responsive Layout) */}
+        <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-6 text-base lg:text-xl">
+          <div className="flex items-center gap-2 lg:gap-3">
+            <FaPhone className="text-lg lg:text-2xl text-gray-700" />
             <a
               href="tel:+251937389909"
-              className="text-base md:text-lg font-semibold text-gray-700 hover:text-green-500"
+              className="font-semibold text-gray-700 hover:text-green-500 whitespace-nowrap"
               style={{ fontFamily: "Lobster, cursive" }}
             >
               +251 937 389 909
             </a>
           </div>
-        
+          <span className="hidden lg:block text-gray-500">|</span>
+          <div className="flex items-center gap-2 lg:gap-3">
+            <FaPhone className="text-lg lg:text-2xl text-gray-700" />
+            <a
+              href="tel:+251717443050"
+              className="font-semibold text-gray-700 hover:text-green-500 whitespace-nowrap"
+              style={{ fontFamily: "Lobster, cursive" }}
+            >
+              +251 717 443 050
+            </a>
+          </div>
         </div>
 
         {/* Theme Toggle */}
-        <div className="mx-auto my-auto text-2xl border-2 border-transparent rounded-full hover:bg-main-8">
+        <div className="text-2xl lg:text-3xl border-2 border-transparent rounded-full hover:bg-main-8">
           {theme.currentThemeColor === darkTheme ? (
             <MdDarkMode onClick={() => theme.changeThemeColor(lightTheme)} />
           ) : (
