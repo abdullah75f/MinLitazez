@@ -12,9 +12,9 @@ const Navbar = () => {
   const theme = UseTheme() as ThemeContextType;
 
   return (
-    <header className="flex flex-col lg:flex-row items-center justify-between px-6 lg:px-12 py-4 lg:py-6">
+    <header className="flex flex-row flex-wrap items-center justify-between px-6 lg:px-12 py-4 lg:py-6">
       {/* Logo and Title */}
-      <div className="flex items-center gap-4 mb-4 lg:mb-0">
+      <div className="flex items-center gap-4">
         <Link to="/" className="flex items-center space-x-4">
           <img
             src={logo}
@@ -31,14 +31,14 @@ const Navbar = () => {
       </div>
 
       {/* Contact Us Section */}
-      <div className="flex flex-col lg:flex-row items-center gap-4 lg:gap-10">
+      <div className="flex items-center gap-4 lg:gap-10">
         {/* Contact Us Label */}
         <div className="text-lg lg:text-2xl font-semibold text-gray-900">
           <span style={{ fontFamily: "Lobster, cursive" }}>Contact Us at</span>
         </div>
 
-        {/* Phone Numbers (Responsive Layout) */}
-        <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-6 text-base lg:text-xl">
+        {/* Phone Numbers (Side by Side on Mobile) */}
+        <div className="flex flex-row items-center gap-2 lg:gap-6 text-base lg:text-xl">
           <div className="flex items-center gap-2 lg:gap-3">
             <FaPhone className="text-lg lg:text-2xl text-gray-700" />
             <a
