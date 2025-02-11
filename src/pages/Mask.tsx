@@ -28,11 +28,28 @@ const Mask = () => {
           <p className="text-2xl text-blue-800 mb-6">
             Get yours today and stay protected.
           </p>
+
+          {/* Clickable phone numbers */}
           <p className="text-2xl font-bold text-blue-700">
-            Call: +251 937 389 909
+            Call:{" "}
+            <a href="tel:+251937389909" className="underline">
+              +251 937 389 909
+            </a>
+            ,{" "}
+            <a href="tel:+251944880841" className="underline">
+              094 488 0841
+            </a>
+            ,{" "}
+            <a href="tel:+251944880840" className="underline">
+              094 488 0840
+            </a>
           </p>
+
           <p className="text-2xl font-bold text-blue-700">
-            Email: minlitazezt@gmail.com
+            Email:{" "}
+            <a href="mailto:minlitazezt@gmail.com" className="underline">
+              minlitazezt@gmail.com
+            </a>
           </p>
           <p className="text-2xl font-bold text-blue-700">
             Post: P.O. Box 20895
@@ -42,5 +59,3 @@ const Mask = () => {
     </div>
   );
 };
-
-export default Mask;
