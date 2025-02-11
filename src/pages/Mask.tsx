@@ -31,7 +31,7 @@ const Mask = () => {
 
           {/* Clickable phone numbers with improved styling */}
           <div className="mb-3 sm:mb-4">
-            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">Call:</p>
+            <p className="text-lg sm:text-2xl font-bold text-blue-700 mb-2">Call on the below numbers</p>
             <div className="flex flex-col space-y-2">
               <a
                 href="tel:+251937389909"
