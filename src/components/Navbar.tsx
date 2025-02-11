@@ -50,6 +50,7 @@ const Navbar = () => {
               +251 937 389 909
             </a>
           </div>
+        
         </div>
 
         {/* Theme Toggle */}
