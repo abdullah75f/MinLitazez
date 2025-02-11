@@ -37,19 +37,19 @@ const Mask = () => {
                 href="tel:+251937389909"
                 className="text-base sm:text-xl bg-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
               >
-                +251 937 389 909
+                0937389909
               </a>
               <a
                 href="tel:+251944880841"
                 className="text-base sm:text-xl bg-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
               >
-                094 488 0841
+                0944880841
               </a>
               <a
                 href="tel:+251944880840"
                 className="text-base sm:text-xl bg-blue-600 text-white px-3 py-2 rounded-lg shadow-md hover:bg-blue-700 transition"
               >
-                094 488 0840
+                0944880840
               </a>
             </div>
           </div>
