@@ -1,4 +1,4 @@
-import guuyyaMin1 from "../assets/images/guuyyaMin1.png";
+import guyyaMin2 from "../assets/images/guyyaMin2.png";
 
 const Mask = () => {
   return (
@@ -14,7 +14,7 @@ const Mask = () => {
 
         <div className="p-8 bg-blue-100 bg-opacity-95 rounded-2xl shadow-2xl">
           <img
-            src={guuyyaMin1}
+            src={guyyaMin2}
             alt="Guyya Facemask"
             className="w-full h-auto rounded-lg mb-6 shadow-lg"
           />
