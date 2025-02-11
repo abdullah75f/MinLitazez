@@ -49,17 +49,6 @@ const Navbar = () => {
               +251 937 389 909
             </a>
           </div>
-          <span className="hidden lg:block text-gray-500">|</span>
-          <div className="flex items-center gap-2 lg:gap-3">
-            <FaPhone className="text-lg lg:text-2xl text-gray-700" />
-            <a
-              href="tel:+251717443050"
-              className="font-semibold text-gray-700 hover:text-green-500 whitespace-nowrap"
-              style={{ fontFamily: "Lobster, cursive" }}
-            >
-              +251 717 443 050
-            </a>
-          </div>
         </div>
 
         {/* Theme Toggle */}
