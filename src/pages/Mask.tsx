@@ -1,5 +1,4 @@
-import guyyaMin1 from "../assets/images/guyyaMin1.png";
-// import guyyaMin2 from "../assets/images/guyyaMin2.png";
+import guyyaMin1 from "../assets/images/guuyyaMin1.png";
 
 const Mask = () => {
   return (
