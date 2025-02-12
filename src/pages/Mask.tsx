@@ -19,11 +19,11 @@ const Mask = () => {
             className="w-full h-auto rounded-lg mb-4 sm:mb-6 shadow-lg"
           />
           <p className="text-2xl sm:text-4xl font-bold text-blue-900 mb-2 sm:mb-3 tracking-tight">
-            Order Your Guyya Facemask Now!
+            Order Your Guyya Face mask Now!
           </p>
           <p className="text-xl sm:text-3xl font-semibold text-blue-900 mb-2 sm:mb-3 leading-relaxed">
             ጭምብልዎን ይሸምቱ ፤<br />
-            ደህነትዎን ይጠብቁ!
+            ደህንነትዎን ይጠብቁ!
           </p>
 
           <p className="text-lg sm:text-2xl font-light text-blue-800 mb-4 sm:mb-6 italic">
